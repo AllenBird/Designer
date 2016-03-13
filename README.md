@@ -46,37 +46,51 @@
   [
     {
       "id": "56dc3d1b975aa89c2a62e9fa",
-      "text": "测试工程",
+      "name": "测试工程",
+      "type": "menuRoot",
+      "childCount": 2,
       "children": [
         {
           "id": "56dc3e45975aa89c2a62e9fd",
-          "text": "测试文件1",
+          "name": "测试文件1",
+          "type": "child",
+          "childCount": 4,
           "children": [
             {
               "id": "56dc3e8c975aa89c2a62ea00",
-              "text": "测试文件1-1",
+              "name": "测试文件1-1",
+              "type": "child",
+              "childCount": 0,
               "children": false
             }
           ]
         },
         {
           "id": "56dc3e45975aa89c2a62e9fe",
-          "text": "测试文件2",
+          "name": "测试文件2",
+          "type": "child",
+          "childCount": 2,
           "children": [
             {
               "id": "56dc3e8c975aa89c2a62ea01",
-              "text": "测试文件2-1",
+              "name": "测试文件2-1",
+              "type": "child",
+              "childCount": 1,
               "children": [
                 {
                   "id": "56dc3eff975aa89c2a62ea03",
-                  "text": "测试文件2-1-1",
+                  "name": "测试文件2-1-1",
+                  "type": "child",
+                  "childCount": 0,
                   "children": false
                 }
               ]
             },
             {
               "id": "56dc3ee8975aa89c2a62ea02",
-              "text": "测试文件2-2",
+              "name": "测试文件2-2",
+              "type": "child",
+              "childCount": 0,
               "children": false
             }
           ]
@@ -85,26 +99,36 @@
     },
     {
       "id": "56dc3ee8975aa89c2a62ea07",
-      "text": "img",
+      "name": "img",
+      "type": "ImageResource",
+      "childCount": 4,
       "children": [
         {
           "id": "56dc3ee8975aa8928e1321",
-          "text": "空调.png",
+          "name": "空调.png",
+          "type": "child",
+          "childCount": 0,
           "children": false
         },
         {
           "id": "56dc3ee8975aa8928e1322",
-          "text": "1F.png",
+          "name": "1F.png",
+          "type": "child",
+          "childCount": 0,
           "children": false
         },
         {
           "id": "56dc3ee8975aa8928e1323",
-          "text": "2F.png",
+          "name": "2F.png",
+          "type": "child",
+          "childCount": 0,
           "children": false
         },
         {
           "id": "56dc3ee8975aa8928e1324",
-          "text": "3F.png",
+          "name": "3F.png",
+          "type": "child",
+          "childCount": 0,
           "children": false
         }
       ]
@@ -117,9 +141,9 @@
   参数名 |  说明 | 类型 | 备注
   -------|-------|------|-----
   id | 唯一标示符/文件路径 | 字符串 |
-  text | 名称 | 字符串 |
+  name | 名称 | 字符串 |
   children | 子文件夹 | 数组 |
-
+  childCount | 子文件数 | 整形 |
 ### 设计图详情
 
 #### 修改记录
@@ -138,12 +162,16 @@
       "img": "1F.png",
       "remark": null,
       "name": "测试文件2-1-1",
-      "type": "1024x768",
+      "imageSize": "1024x768",
+      "type": "detail",
       "createAt": "2016-02-16T08:43:11.109Z",
       "children": false,
+      "childCount": 0,
       "list": [
         {
           "name": "空调系统",
+          "type": "category",
+          "childCount": 2,
           "children": [
             {
               "name": "空调控制1",
@@ -152,6 +180,7 @@
               "top": 94,
               "width": 82,
               "height": 73.4,
+              "central" : [x, y], // left+(width/2), top+(height/2)
               "img":"air.png",
               "type": "AirConditioner",
               "object" : {
@@ -174,6 +203,7 @@
               "top": 121,
               "width": 82,
               "height": 73.4,
+              "central" : [x, y], // left+(width/2), top+(height/2)
               "img":"air.png",
               "type": "AirConditioner",
               "object" : {
@@ -193,6 +223,7 @@
         },
         {
           "name": "地暖系统",
+          "type": "category",
           "children": [
             {
               "name": "地暖1",
@@ -201,6 +232,7 @@
               "top": 241,
               "width": 46,
               "height": 68.4,
+              "central" : [x, y], // left+(width/2), top+(height/2)
               "img":"heat.png",
               "type": "heat",
               "object": {
