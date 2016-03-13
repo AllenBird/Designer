@@ -1,0 +1,21 @@
+UIDesigner修改要求
+1. 增加控件central坐标属性（菜单数据 设计图）
+2. 每个Json节点增加Type属性来区别节点（Root、标签、实例 section, section member）（菜单数据 设计图）
+3. 增加父节点包含子节点个数属性（菜单数据 设计图）childrenCount
+-4. 增加子节点排列顺序属性（手机界面排布）（菜单数据 设计图）
+-5. object 地址属性区别Main Mid Sub三个风别来填写
+-6. object参数不完整
+7. 在detail中type由imageSize代替
+8. 增加在Detail的list每个大类数组的顺序Index以及children中的顺序Index
+9. list中的name换成category， category改为英文名称
+—-10. list中的children中的name换成objectName、type换成objectType、 object换成objectDetail
+11. text换成name
+12. id能否简化
+13. list 和 children的空的逻辑不一致list为空数组 children为false
+14. category是否和children里面的type重复
+15. id连接符用-  使用\解析麻烦
+
+疑问：
+1. 如何区别测试文件的标签、设计图属性以及手机界面排列顺序的问题
+2. 节点如何排序
+3. 为什么detail里面是_id
