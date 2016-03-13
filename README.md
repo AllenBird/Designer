@@ -180,7 +180,7 @@
               "top": 94,
               "width": 82,
               "height": 73.4,
-              "central" : [x, y], // left+(width/2), top+(height/2)
+              "centre" : [x, y], // left+(width/2), top+(height/2)
               "img":"air.png",
               "type": "AirConditioner",
               "object" : {
@@ -203,7 +203,7 @@
               "top": 121,
               "width": 82,
               "height": 73.4,
-              "central" : [x, y], // left+(width/2), top+(height/2)
+              "centre" : [x, y], // left+(width/2), top+(height/2)
               "img":"air.png",
               "type": "AirConditioner",
               "object" : {
@@ -232,7 +232,7 @@
               "top": 241,
               "width": 46,
               "height": 68.4,
-              "central" : [x, y], // left+(width/2), top+(height/2)
+              "centre" : [x, y], // left+(width/2), top+(height/2)
               "img":"heat.png",
               "type": "heat",
               "object": {
@@ -264,5 +264,6 @@
   top | 已左上角为原点，离上边轴的距离 | 浮点型 |
   width | 图片的宽 | 浮点型 |
   height | 图片的高 | 浮点型 |
+  centre | 图片的中心坐标 | 数组 | [x, y]
   type | list中的type说明控制对象的类型 | 枚举 | 空调`AirConditioner`<br>地暖`heat`<br> ...这里还需要详细定义一下
   object | 控制对象的属性 | 对象 | 不同的type，对象属性不同
