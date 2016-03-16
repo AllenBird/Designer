@@ -1,8 +1,8 @@
 {
   "_id": "56dc3eff975aa89c2a62ea03",
-  "img": "1F.png",
+  "img": "2F.png",
   "remark": null,
-  "name": "测试文件2-1",
+  "name": "测试文件2-1-1",
   "type": "1024x768",
   "createAt": "2016-02-16T08:43:11.109Z",
   "children": false,
@@ -22,7 +22,7 @@
           "img":"DimmingLight.png",
           "type": "DimmingLight",
           "object": {
-            "OnoffWriteToAddress" : "0/0/1",
+            "OnOffWriteToAddress" : "0/0/1",
             "OnOffReadFromAddress" : "1/0/1",
             "ValueWriteToAddress" : "0/0/1",
             "ValueReadFromAddress" : "1/0/1",
@@ -45,7 +45,7 @@
           "img":"SwitchLight.png",
           "type": "SwitchLight",
           "object": {
-            "OnoffWriteToAddress" : "0/0/1",
+            "OnOffWriteToAddress" : "0/0/1",
             "OnOffReadFromAddress" : "1/0/1",
           }
         }
@@ -66,7 +66,7 @@
           "img":"RGBLight.png",
           "type": "RGBLight",
           "object": {
-            "OnoffWriteToAddress" : "0/0/1",
+            "OnOffWriteToAddress" : "0/0/1",
             "OnOffReadFromAddress" : "1/0/1",
             "RValueWriteToAddress" : "0/0/1",
             "RValueReadFromAddress" : "1/0/1",
@@ -93,7 +93,7 @@
           "img":"air.png",
           "type": "AirConditioner",
           "object" : {
-            "OnoffWriteToAddress" : "0/0/1",
+            "OnOffWriteToAddress" : "0/0/1",
             "OnOffReadFromAddress" : "1/0/1",
             "TemperatureBasePointWriteToAddress" : "0/0/1",
             "TemperatureBasePointReadFromAddress" : "1/0/1",
@@ -133,7 +133,7 @@
           "img":"heat.png",
           "type": "Heater",
           "object": {
-            "OnoffWriteToAddress" : "0/0/1",
+            "OnOffWriteToAddress" : "0/0/1",
             "OnOffReadFromAddress" : "1/0/1",
             "TemperatureBasePointWriteToAddress" : "0/0/1",
             "TemperatureBasePointReadFromAddress" : "1/0/1",
@@ -159,10 +159,8 @@
           "img":"SingleCurtain.png",
           "type": "SingleCurtain",
           "object": {
-            "OpenWriteToAddress" : "0/0/1",
-            "OpenReadFromAddress" : "1/0/1",
-            "CloseWriteToAddress" : "0/0/1",
-            "CloseReadFromAddress" : "1/0/1",
+            "OpenCloseWriteToAddress" : "0/0/1",
+            "StopWriteToAddress" : "0/0/1",
             "PositionWriteToAddress" : "0/0/1",
             "PositionReadFromAddress" : "1/0/1",
           }
@@ -184,19 +182,15 @@
           "img":"DoubleCurtain.png",
           "type": "DoubleCurtain",
           "object": {
-            "Curtain1OpenWriteToAddress" : "0/0/1",
-            "Curtain1OpenReadFromAddress" : "1/0/1",
-            "Curtain1CloseWriteToAddress" : "0/0/1",
-            "Curtain1CloseReadFromAddress" : "1/0/1",
+            "Curtain1OpenCloseWriteToAddress" : "0/0/1",
+            "Curtain1StopWriteToAddress" : "0/0/1",
             "Curtain1PositionWriteToAddress" : "0/0/1",
             "Curtain1PositionReadFromAddress" : "1/0/1",
-            "Curtain2OpenWriteToAddress" : "0/0/1",
-            "Curtain2OpenReadFromAddress" : "1/0/1",
-            "Curtain2CloseWriteToAddress" : "0/0/1",
-            "Curtain2CloseReadFromAddress" : "1/0/1",
+            "Curtain2OpenCloseWriteToAddress" : "0/0/1",
+            "Curtain2StopWriteToAddress" : "0/0/1",
             "Curtain2PositionWriteToAddress" : "0/0/1",
             "Curtain2PositionReadFromAddress" : "1/0/1",
-            "BothCloseWriteToAddress" : "0/0/1",
+            "BothOpenCloseWriteToAddress" : "0/0/1",
             "BothPositionWriteToAddress" : "0/0/1",
           }
         }
